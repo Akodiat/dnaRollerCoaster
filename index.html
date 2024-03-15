@@ -4,10 +4,23 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
     <title>DNA roller coaster</title>
   </head>
   <body style="margin: 0;">
     <div id="app"></div>
+    <div id="inputContainer" class="container-fluid">
+      <article>
+          <h1>oxDNA rollercoaster</h1>
+
+          <label for="fileInput">Upload topology (.top) and confinguration file (.conf/.dat/.oxdna) here:
+              <input type="file" id="fileInput" accept=".top, .conf, .dat, .oxdna" multiple/>
+          </label>
+
+          <div id="plot" style="width: 100%; display: flex;"></div>
+      </article>
+    </div>
 
     <!-- Import maps polyfill -->
     <!-- Remove this when import maps will be widely supported -->
